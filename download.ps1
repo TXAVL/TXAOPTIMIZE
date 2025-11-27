@@ -5,7 +5,6 @@ $exePath = "$env:TEMP\Unikey-TXA.exe"
 
 Write-Output "Dang tai file cai dat..."
 
-# WebRequest de lay progress dung moi phien ban PowerShell
 $req = [System.Net.HttpWebRequest]::Create($exeUrl)
 $res = $req.GetResponse()
 $total = $res.ContentLength
@@ -28,7 +27,7 @@ $res.Close()
 
 Write-Output "Tai xong: $exePath"
 
-$confirm = Read-Host "Ban co muon chay file nay? (Y/N)"
+$confirm = Read-Host "Ban co muon chay phan mem vua tai? (Y/N)"
 if ($confirm -eq "Y") {
     Start-Process $exePath
 } else {
