@@ -1,8 +1,8 @@
 $exePath = "$env:TEMP\Unikey-TXA.exe"
 $exeUrl = "https://raw.githubusercontent.com/TXAVL/TXAOPTIMIZE/main/Unikey%20-%20TXA.exe"
 
-Write-Host "Đang tải file..."
-Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
+Write-Output "Đang tải file..."
+Invoke-WebRequest -Uri $exeUrl -OutFile $exePath -UseBasicParsing
 
-Write-Host "Tải thành công! Đang chạy..."
+Write-Output "Tải thành công! Đang chạy..."
 Start-Process $exePath
