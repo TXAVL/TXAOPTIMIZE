@@ -1,5 +1,4 @@
 # --- CẤU HÌNH ---
-# Link tải TXAAPP V5.0 từ MediaFire
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
 $VERSION    = "5.2"
@@ -36,7 +35,7 @@ catch {
 # --- FUNCTION CLEAR UI (GIỮ HEADER) ---
 function Show-Header {
     Write-Host "------------------------------------------------" -ForegroundColor Cyan
-    Write-Host "           TXAAPP V5.0                          " -ForegroundColor Green
+    Write-Host "           $APPNAME V$VERSION                          " -ForegroundColor Green
     Write-Host "------------------------------------------------" -ForegroundColor Cyan
     Write-Host ""
 }
@@ -363,8 +362,8 @@ try {
         $fileSize = (Get-Item $SavePath).Length
         if ($fileSize -gt 1024) {
             Write-Host "Da tai xong! ($([math]::Round($fileSize/1MB, 2)) MB)" -ForegroundColor Green
-            Write-Host "Dang khoi dong TXAAPP V5.0..." -ForegroundColor Yellow
-            
+            Write-Host "Dang khoi dong $APPNAME V$VERSION..." -ForegroundColor Yellow
+    
             # Tự động chạy file
             Start-Process -FilePath $SavePath -Wait 
         }
@@ -388,4 +387,5 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
