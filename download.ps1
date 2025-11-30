@@ -2,7 +2,7 @@
 # Link tải TXAAPP V5.0 từ MediaFire
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
-$VERSION    = "5.0"
+$VERSION    = "5.2"
 $APPNAME    = "TXAAPP"
 $TITLE_TEXT = "$APPNAME V$VERSION - Download Tool"
 
@@ -388,3 +388,4 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
