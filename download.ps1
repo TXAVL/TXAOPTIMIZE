@@ -1,7 +1,7 @@
 # --- CẤU HÌNH ---
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
-$VERSION    = "6.0"
+$VERSION    = "6.4"
 $APPNAME    = "TXAAPP"
 $TITLE_TEXT = "$APPNAME V$VERSION - Download Tool"
 
@@ -387,6 +387,7 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
 
 
