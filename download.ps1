@@ -1,8 +1,8 @@
 # --- CẤU HÌNH ---
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
-$VERSION    = "6.4"
-$APPNAME    = "TXAAPP"
+$VERSION    = "6.6"
+$APPNAME    = "TXATOOL POWERFULL"
 $TITLE_TEXT = "$APPNAME V$VERSION - Download Tool"
 
 function Set-SafeTitle {
@@ -387,6 +387,7 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
 
 
