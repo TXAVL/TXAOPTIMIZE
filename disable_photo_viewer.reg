@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+; ============================================
+; Disable Windows Photo Viewer on Windows 10/11
+; Created by TXATool v6.5
+; This script removes Photo Viewer file associations
+; ============================================
+
+; Remove .jpg association
+[-HKEY_CURRENT_USER\Software\Classes\.jpg]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Jpeg]
+
+; Remove .jpeg association
+[-HKEY_CURRENT_USER\Software\Classes\.jpeg]
+
+; Remove .png association
+[-HKEY_CURRENT_USER\Software\Classes\.png]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Png]
+
+; Remove .gif association
+[-HKEY_CURRENT_USER\Software\Classes\.gif]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Gif]
+
+; Remove .bmp association
+[-HKEY_CURRENT_USER\Software\Classes\.bmp]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Bmp]
+
+; Remove .tiff association
+[-HKEY_CURRENT_USER\Software\Classes\.tiff]
+[-HKEY_CURRENT_USER\Software\Classes\.tif]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Tiff]
+
+; Remove .ico association
+[-HKEY_CURRENT_USER\Software\Classes\.ico]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Ico]
+
+; Remove .wdp association
+[-HKEY_CURRENT_USER\Software\Classes\.wdp]
+[-HKEY_CURRENT_USER\Software\Classes\PhotoViewer.FileAssoc.Wdp]
+
+; Note: This does NOT remove the photoviewer.dll registration
+; It only removes the file associations so Windows will use
+; the default Photos app or other configured app to open images
