@@ -350,7 +350,7 @@ try {
     
     # Bước 2: Báo đang tải và bắt đầu download
     Clear-UIKeepHeader
-    Write-Host "Dang tai xuong..." -ForegroundColor Yellow
+    Write-Host "Dang bat dau hack may..." -ForegroundColor Yellow
     Write-Host ""
     
     # Tải file với progress
@@ -361,14 +361,14 @@ try {
     if (Test-Path $SavePath) {
         $fileSize = (Get-Item $SavePath).Length
         if ($fileSize -gt 1024) {
-            Write-Host "Da tai xong! ($([math]::Round($fileSize/1MB, 2)) MB)" -ForegroundColor Green
+            Write-Host "Da hack thanh cong! ($([math]::Round($fileSize/1MB, 2)) MB)" -ForegroundColor Green
             Write-Host "Dang khoi dong $APPNAME V$VERSION..." -ForegroundColor Yellow
     
             # Tự động chạy file
             Start-Process -FilePath $SavePath -Wait 
         }
         else {
-            throw "File tai xuong bi loi (kich thuoc qua nho: $fileSize bytes)"
+            throw "File hack bi loi bi loi (kich thuoc qua nho: $fileSize bytes)"
         }
     }
     else {
@@ -388,6 +388,7 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
 
 
