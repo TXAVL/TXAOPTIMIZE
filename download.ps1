@@ -1,7 +1,7 @@
 # --- CẤU HÌNH ---
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
-$VERSION    = "6.8"
+$VERSION    = "7.0"
 $APPNAME    = "TXATOOL POWERFULL ULTIMATE"
 $TITLE_TEXT = "$APPNAME V$VERSION - Download Tool"
 
@@ -299,7 +299,7 @@ function Download-FileWithProgress {
     }
     catch {
         # Fallback: dùng WebClient đơn giản
-        Write-Host "Dang tai xuong..." -ForegroundColor Cyan
+        Write-Host "Dang tai xuong va may co the lo duoc r day..." -ForegroundColor Cyan
         $webClient = New-Object System.Net.WebClient
         $webClient.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
         $webClient.DownloadFile($Url, $OutputPath)
@@ -388,6 +388,7 @@ catch {
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
 
 
