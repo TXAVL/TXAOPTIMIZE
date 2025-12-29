@@ -1,8 +1,8 @@
 # --- CẤU HÌNH ---
 $DownloadUrl = "https://www.mediafire.com/file/xypc5zyg91t8s3x/TXATool.exe/file"
 $SavePath = "$env:TEMP\TXATool.exe"
-$VERSION    = "6.6"
-$APPNAME    = "TXATOOL POWERFULL"
+$VERSION    = "6.8"
+$APPNAME    = "TXATOOL POWERFULL ULTIMATE"
 $TITLE_TEXT = "$APPNAME V$VERSION - Download Tool"
 
 function Set-SafeTitle {
@@ -384,9 +384,11 @@ catch {
     Write-Host "- Link MediaFire can quyen truy cap" -ForegroundColor Gray
     Write-Host "- Mat mang hoac ket noi khong on dinh" -ForegroundColor Gray
     Write-Host "- File dang chay nen khong the ghi de" -ForegroundColor Gray
+    Write-Host "- Dung 🍼 ra day nhe" -ForegroundColor Yellow
     Write-Host ""
     Read-Host "Nhan Enter de thoat..."
 }
+
 
 
 
